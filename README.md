@@ -8,7 +8,7 @@ clone this repo by running ' git clone https://github.com/h4ck3rkenya/mwitu.git 
 then run <br />
   cd mwitu <br/>
   npm install<br/>
-  npm run dev<br/>
+  npm start<br/>
 
 to install all the requirements  and start the development server<br />
 
