@@ -116,3 +116,17 @@ services:
     ports:
       - "32400:32400/tcp"
     restart: unless-stopped
+  lidarr:
+    image: lscr.io/linuxserver/lidarr:latest
+    container_name: lidarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - /home/media/configs/lidarr:/config
+      - /home/media/music:/music #optional
+      - /home/media/downloads:/downloads #optional
+    ports:
+      - 8686:8686
+    restart: unless-stopped
