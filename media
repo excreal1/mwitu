@@ -130,3 +130,16 @@ services:
     ports:
       - 8686:8686
     restart: unless-stopped
+    
+  apache:
+    image: httpd:latest
+    ports:
+      - "80:80"
+    volumes:
+      - /home/media:/usr/local/apache2/htdocs
+    restart: always
+    command: ["sh", "-c", "sed -i '/LoadModule rewrite_module/s/^#//g' /usr/local/apache2/conf/httpd.conf && \
+                        sed -i '/LoadModule ssl_module/s/^#//g' /usr/local/apache2/conf/httpd.conf && \
+                        sed -i '/LoadModule socache_shmcb_module/s/^#//g' /usr/local/apache2/conf/httpd.conf && \
+                        echo 'AcceptPathInfo on' >> /usr/local/apache2/conf/httpd.conf && \
+                        httpd-foreground"]
