@@ -113,6 +113,7 @@ services:
       - /home/media/configs/plex:/config
       - /home/media/tv:/tv
       - /home/media/movies:/movies
+      - /home/media/music:/music
     ports:
       - "32400:32400/tcp"
     restart: unless-stopped
