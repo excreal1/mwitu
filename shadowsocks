@@ -4,8 +4,8 @@ services:
   shadowsocks:
     image: ghcr.io/akafeng/shadowsocks-rust
     ports:
-      - "8388:8388/tcp"
-      - "8388:8388/udp"
+      - "5656:8388/tcp"
+      - "5656:8388/udp"
     environment:
       - PASSWORD=0767
     restart: unless-stopped
