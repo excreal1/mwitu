@@ -14,8 +14,9 @@ yay -Suy
 
 cd /opt 
 
-sudo git clone https://github.com/SolDoesTech/hyprland.git
+bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
 
-#Video tutorial
 
-https://www.youtube.com/watch?v=lfUWwZqzHmA&ab_channel=SolDoesTech
+gemini api key
+
+"AIzaSyAK_zMRSp89KqYQqqfOi6VaQjC7qqupT-s"
