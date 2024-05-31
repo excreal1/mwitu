@@ -1,6 +1,6 @@
 # Git Configuration
 
-To set up your Git configuration with the provided details, use the following commands:
+To set up your Git configurations, use the following commands:
 
 ```bash
 git config --global user.name "excreal1"
