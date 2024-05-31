@@ -1,3 +1,8 @@
-git config --global user.name "excreal1" \n
-git config --global user.email "148652451+excreal1@users.noreply.github.com" \n
-git config --global credential.helper store \n
+# Git Configuration
+
+To set up your Git configuration with the provided details, use the following commands:
+
+```bash
+git config --global user.name "excreal1"
+git config --global user.email "148652451+excreal1@users.noreply.github.com"
+git config --global credential.helper store
