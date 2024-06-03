@@ -1,13 +1,20 @@
 # My commands dump
 
 ## Contents
-- [Run remote script using domain](#run-remote-script-using-domain) 
-- [Git Configuration](#git-configuration) 
-- [Wifi 5g Fix](#wifi-5g-fix) 
-- [Media Server Docker-Compose setup](#docker-compose)
-  - [On Linux](#linux) 
-  - [On Windows](#windows)  
-- [Auto Commit to Github](#auto-commit) 
+  - [Scripts](#scripts) 
+  - [Run remote script using domain](#run-remote-script-using-domain) 
+  - [Auto Commit to Github](#auto-commit) 
+- [Configurations](#configs) 
+  - [Git Configuration](#git-configuration) 
+  - [Wifi 5g Fix](#wifi-5g-fix) 
+  - [Media Server Docker-Compose setup](#docker-compose)
+    - [On Linux](#linux) 
+    - [On Windows](#windows)  
+
+
+# Scripts
+
+Collection of scripts
 
 ## Run remote script using domain
 
@@ -17,6 +24,41 @@ automatically execute scripts from github in one line
 bash <(curl -sSL https://website-1lt.pages.dev/fastfetch)
 
 ```
+# Auto commit
+
+This script automatically checks and commits changes to main branch on github in one command 
+
+- #### usage:
+```
+commit.sh -m "Commit message"
+```
+- #### Code
+```
+#!/bin/bash
+
+# Check if there are changes to commit
+if [ -n "$(git status --porcelain)" ]; then
+    # Add all changes
+    git add .
+
+    # Prompt for commit message
+    read -p "Enter commit message: " commit_message
+
+    # Commit changes
+    git commit -m "$commit_message"
+
+    # Push changes to origin main
+    git push origin main
+
+    echo "Changes committed and pushed successfully."
+else
+    echo "No changes to commit."
+fi
+
+```
+
+
+# Configs
 
 ## Git Configuration
 
@@ -351,36 +393,3 @@ services:
 
 ```
 
-# Auto commit
-
-This script automatically checks and commits changes to main branch on github in one command 
-
-- #### usage:
-```
-    commit.sh -m "Commit message"
-
-```
-- #### Code
-```
-#!/bin/bash
-
-# Check if there are changes to commit
-if [ -n "$(git status --porcelain)" ]; then
-    # Add all changes
-    git add .
-
-    # Prompt for commit message
-    read -p "Enter commit message: " commit_message
-
-    # Commit changes
-    git commit -m "$commit_message"
-
-    # Push changes to origin main
-    git push origin main
-
-    echo "Changes committed and pushed successfully."
-else
-    echo "No changes to commit."
-fi
-
-```
