@@ -4,9 +4,11 @@
 - [Git Configuration](#git-configuration) 
 - [Wifi 5g Fix](#wifi-5g-fix) 
 - [Run remote script using domain](#run-remote-script-using-domain) 
-- [Media Server Docker-Compose setup](#media-server-docker-compose-setup)
+- [Media Server Docker-Compose setup](#docker-compose)
+  - [On Linux](#linux) 
+  - [On Windows](#windows)  
 
-- ## Git Configuration
+## Git Configuration
 
 To set up your Git configurations, use the following commands:
 
@@ -17,7 +19,7 @@ git config --global credential.helper store
 
 ```
 
-- ## Wifi 5g Fix
+## Wifi 5g Fix
 
 
 ```
@@ -32,7 +34,7 @@ nmcli device wifi connect 78:45:58:78:2F:C3
 nmcli connection modify UoNWIFI 802-11-wireless.band "a"
 ```
 
-- ## Run remote script using domain
+## Run remote script using domain
 ```
 bash <(curl -sSL https://website-1lt.pages.dev/fastfetch)
 
