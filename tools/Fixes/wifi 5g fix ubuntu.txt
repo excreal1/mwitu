@@ -1,9 +1,0 @@
-iwlist wlo1 freq
-sudo iwconfig wlo1 freq 5.7G
-
-or 
-
-nmcli device wifi rescan
-nmcli device wifi list
-nmcli device wifi connect 78:45:58:78:2F:C3
-nmcli connection modify UoNWIFI 802-11-wireless.band "a"
