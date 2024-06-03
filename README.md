@@ -1,4 +1,5 @@
 # My commands dump
+---
 
 ## Contents
 - [Scripts](#scripts) 
@@ -13,7 +14,7 @@
 
 
 # Scripts
-
+---
 Collection of scripts
 
 ## Run remote script using domain
@@ -25,7 +26,7 @@ bash <(curl -sSL https://website-1lt.pages.dev/fastfetch)
 
 ```
 # Auto commit
-
+---
 This script automatically checks and commits changes to main branch on github in one command 
 
 - ### usage:
@@ -59,6 +60,7 @@ fi
 
 
 # Configs
+---
 
 ## Git Configuration
 
@@ -89,6 +91,7 @@ nmcli connection modify UoNWIFI 802-11-wireless.band "a"
 ```
 
 # Docker Compose
+---
 
 Media server docker setup configuration
 
