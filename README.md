@@ -1,7 +1,7 @@
 # My commands dump
 
 ## Contents
-  - [Scripts](#scripts) 
+- [Scripts](#scripts) 
   - [Run remote script using domain](#run-remote-script-using-domain) 
   - [Auto Commit to Github](#auto-commit) 
 - [Configurations](#configs) 
