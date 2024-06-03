@@ -10,6 +10,9 @@
 - [Auto Commit to Github](#auto-commit) 
 
 ## Run remote script using domain
+
+automatically execute scripts from github in one line
+
 ```
 bash <(curl -sSL https://website-1lt.pages.dev/fastfetch)
 
@@ -28,6 +31,7 @@ git config --global credential.helper store
 
 ## Wifi 5g Fix
 
+These are various commands to connect to 5G
 
 ```
 iwlist wlo1 freq
@@ -39,10 +43,12 @@ nmcli device wifi rescan
 nmcli device wifi list
 nmcli device wifi connect 78:45:58:78:2F:C3
 nmcli connection modify UoNWIFI 802-11-wireless.band "a"
+
 ```
 
 # Docker Compose
 
+Media server docker setup configuration
 
 - ## Linux 
 ```
@@ -347,6 +353,13 @@ services:
 
 # Auto commit
 
+This script automatically checks and commits changes to main branch on github in one command 
+
+ - #### usage:
+    ```
+    commit.sh -m "Commit message"
+
+    ```
 ```
 #!/bin/bash
 
