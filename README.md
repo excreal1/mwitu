@@ -7,7 +7,7 @@
 - [Media Server Docker-Compose setup](#docker-compose)
   - [On Linux](#linux) 
   - [On Windows](#windows)  
-
+- [Auto Commit to Github](#auto-commit) 
 
 ## Run remote script using domain
 ```
@@ -342,5 +342,31 @@ services:
                         sed -i '/LoadModule socache_shmcb_module/s/^#//g' /usr/local/apache2/conf/httpd.conf && \
                         echo 'AcceptPathInfo on' >> /usr/local/apache2/conf/httpd.conf && \
                         httpd-foreground"]
+
+```
+
+# Auto commit
+
+```
+#!/bin/bash
+
+# Check if there are changes to commit
+if [ -n "$(git status --porcelain)" ]; then
+    # Add all changes
+    git add .
+
+    # Prompt for commit message
+    read -p "Enter commit message: " commit_message
+
+    # Commit changes
+    git commit -m "$commit_message"
+
+    # Push changes to origin main
+    git push origin main
+
+    echo "Changes committed and pushed successfully."
+else
+    echo "No changes to commit."
+fi
 
 ```
