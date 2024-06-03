@@ -10,4 +10,6 @@ git config --global credential.helper store
 ```
 # Run remote script using domain
 ```
-bash <(curl -sSL https://website-1lt.pages.dev/fastfetch) ```
+bash <(curl -sSL https://website-1lt.pages.dev/fastfetch)
+
+```
