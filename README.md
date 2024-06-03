@@ -24,7 +24,7 @@ nmcli device wifi connect 78:45:58:78:2F:C3
 nmcli connection modify UoNWIFI 802-11-wireless.band "a"
 ```
 
-# Run remote script using domain
+- # Run remote script using domain
 ```
 bash <(curl -sSL https://website-1lt.pages.dev/fastfetch)
 
