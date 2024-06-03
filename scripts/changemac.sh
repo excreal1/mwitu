@@ -11,7 +11,6 @@ sudo ip link set dev wlan0 address "$RANDOM_MAC"
 
 # Bring the wlan0 interface up
 sudo ip link set dev wlan0 up
-ip addr > ipaddr.txt
 
 # Check if the MAC address change was successful
 if [ $? -eq 0 ]; then
