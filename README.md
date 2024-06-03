@@ -4,10 +4,8 @@
 - [Git Configuration](#git-configuration) 
 - [Wifi 5g Fix](#wifi-5g-fix) 
 - [Run remote script using domain](#run-remote-script-using-domain) 
-- [Media Server Docker-Compose setup](#docker-compose)
-  - [On Linux](#linux) 
-  - [On Windows](#windows)  
-    
+- [Media Server Docker-Compose setup](#media-server-docker-compose-setup)
+
 - ## Git Configuration
 
 To set up your Git configurations, use the following commands:
@@ -20,6 +18,8 @@ git config --global credential.helper store
 ```
 
 - ## Wifi 5g Fix
+
+
 ```
 iwlist wlo1 freq
 sudo iwconfig wlo1 freq 5.7G
