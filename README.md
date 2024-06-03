@@ -355,11 +355,12 @@ services:
 
 This script automatically checks and commits changes to main branch on github in one command 
 
- - #### usage:
-    ```
+- #### usage:
+```
     commit.sh -m "Commit message"
 
-    ```
+```
+- #### Code
 ```
 #!/bin/bash
 
