@@ -1,13 +1,13 @@
 # My commands dump
 
-
-# Contents
- - [Git Configuration](git-configuration) 
- - [Wifi 5g Fix](#wifi-5g-fix) 
- - [Run remote script using domain](#Run-remote-script-using-domain) 
- - [Media Server Docker-Compose setup:](#docker-compose)
- - [On Linux](#linux) 
- - [On Windows](#windows)  
+## Contents
+- [Git Configuration](#git-configuration) 
+- [Wifi 5g Fix](#wifi-5g-fix) 
+- [Run remote script using domain](#run-remote-script-using-domain) 
+- [Media Server Docker-Compose setup](#docker-compose)
+  - [On Linux](#linux) 
+  - [On Windows](#windows)  
+    
 - ## Git Configuration
 
 To set up your Git configurations, use the following commands:
