@@ -1,12 +1,19 @@
 # My commands dump
 
 ## Contents
+- [Run remote script using domain](#run-remote-script-using-domain) 
 - [Git Configuration](#git-configuration) 
 - [Wifi 5g Fix](#wifi-5g-fix) 
-- [Run remote script using domain](#run-remote-script-using-domain) 
 - [Media Server Docker-Compose setup](#docker-compose)
   - [On Linux](#linux) 
   - [On Windows](#windows)  
+
+
+## Run remote script using domain
+```
+bash <(curl -sSL https://website-1lt.pages.dev/fastfetch)
+
+```
 
 ## Git Configuration
 
@@ -33,13 +40,6 @@ nmcli device wifi list
 nmcli device wifi connect 78:45:58:78:2F:C3
 nmcli connection modify UoNWIFI 802-11-wireless.band "a"
 ```
-
-## Run remote script using domain
-```
-bash <(curl -sSL https://website-1lt.pages.dev/fastfetch)
-
-```
-
 
 # Docker Compose
 
