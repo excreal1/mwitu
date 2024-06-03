@@ -28,11 +28,11 @@ bash <(curl -sSL https://website-1lt.pages.dev/fastfetch)
 
 This script automatically checks and commits changes to main branch on github in one command 
 
-- #### usage:
+- ### usage:
 ```
 commit.sh -m "Commit message"
 ```
-- #### Code
+- ### Code
 ```
 #!/bin/bash
 
