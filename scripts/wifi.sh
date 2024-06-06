@@ -1,1 +1,0 @@
-curl http://gstatic.com/generate_204 | python3 extract_variables.py
