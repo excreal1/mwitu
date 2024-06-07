@@ -15,7 +15,7 @@
 
 # Scripts
 ---
-Collection of scripts
+A Collection of scripts
 
 ## Run remote script using domain
 
