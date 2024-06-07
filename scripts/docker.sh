@@ -11,10 +11,10 @@ sudo apt update && sudo apt install docker docker-compose
 sudo usermod -aG docker $USER
 
 # Create a directory for Nginx Proxy Manager
-mkdir /opt/nginx-proxy-manager
+sudo mkdir /opt/nginx-proxy-manager
 
 # Create a Docker Compose file
-cat <<EOT >> /opt/nginx-proxy-manager/docker-compose.yml
+sudo cat <<EOT >> /opt/nginx-proxy-manager/docker-compose.yml
 version: '3'
 
 services:
@@ -50,7 +50,9 @@ services:
 EOT
 
 # Change permissions for the Docker Compose file
-chmod 644 /opt/nginx-proxy-manager/docker-compose.yml
+
+sudo chmod 664 /opt/*
+sudo chmod 644 /opt/nginx-proxy-manager/docker-compose.yml
 
 # Start Nginx Proxy Manager
 cd /opt/nginx-proxy-manager
