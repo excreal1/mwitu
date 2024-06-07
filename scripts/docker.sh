@@ -1,20 +1,8 @@
 #!/bin/bash
 
-
-#ertyuio  
-#rtyuio9
-#ewrtyu890-
-#ertyui89
-#dtryu7i8
-#dftyui
-#sdftyuio
-#dfghujio
-
-sudo su
-
 Check if the script is being run as root
 if [[ $EUID -ne 0 ]]; then
-    echo "This script must be run as root" 
+    echo "This script must be run as root. UMBWA. run sudo su first, then try again." 
     exit 1
 fi
 
