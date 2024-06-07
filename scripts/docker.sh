@@ -42,5 +42,27 @@ chmod 777 /opt/nginx-proxy-manager/docker-compose.yml
 cd /opt/nginx-proxy-manager
 docker-compose up -d
 
+# Add Plex repository key
+curl https://downloads.plex.tv/plex-keys/PlexSign.key | apt-key add -
+
+# Add Plex repository
+echo deb https://downloads.plex.tv/repo/deb public main | tee /etc/apt/sources.list.d/plexmediaserver.list
+
+# Update package lists
+apt update
+
+# Install Plex Media Server
+apt install -y plexmediaserver
+
+# Start Plex Media Server
+systemctl start plexmediaserver
+
+# Enable Plex Media Server to start on boot
+systemctl enable plexmediaserver
+
+# Display Plex Media Server status
+systemctl status plexmediaserver
+
+
 exit
 
