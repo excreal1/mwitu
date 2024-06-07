@@ -30,6 +30,10 @@ services:
 EOT
 
 # Change permissions for the Docker Compose file
+mkdir -p /opt/nginx-proxy-manager/data
+mkdir -p /opt/nginx-proxy-manager/letsencrypt
+chown -R 101:101 /opt/nginx-proxy-manager/data
+chown -R 101:101 /opt/nginx-proxy-manager/letsencrypt
 
 chmod 777 /opt/*
 chmod 777 /opt/nginx-proxy-manager/docker-compose.yml
